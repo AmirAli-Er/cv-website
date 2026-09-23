@@ -2,12 +2,10 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Brittany Chiang',
-    description:
-      'Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    title: 'AmirAli',
+    description: 'AmirAli is a mid-level frontend developer ',
+    siteUrl: 'http://localhost:8000',
+    image: '/og.png',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -44,13 +42,7 @@ module.exports = {
         path: `${__dirname}/content/`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/content/posts`,
-      },
-    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
